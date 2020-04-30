@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-namespace Stringier {
+namespace Stringier.Glyphs {
 	/// <summary>
 	/// Represents a variancy table used for glyph variant lookups.
 	/// </summary>
@@ -74,6 +74,6 @@ namespace Stringier {
 		/// <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the <paramref name="value"/> parameter. This parameter is passed uninitialized.</param>
 		/// <returns><see langword="true"/> if the <see cref="VariancyTable"/> contains an element with the specified key; otherwise, <see langword="false"/>.</returns>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		internal static Boolean TryGetValue(Int32 key, out String[] value) => Variants.TryGetValue(key, out value);
+		public static Boolean TryGetValue(Int32 key, out String[] value) => Variants.TryGetValue(key, out value);
 	}
 }
