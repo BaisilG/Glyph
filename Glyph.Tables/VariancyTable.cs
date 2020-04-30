@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace Stringier {
 	/// <summary>
-	/// Represents a variancy table used for <see cref="Glyph"/> variant lookups.
+	/// Represents a variancy table used for glyph variant lookups.
 	/// </summary>
 	public static class VariancyTable {
 		/// <summary>
